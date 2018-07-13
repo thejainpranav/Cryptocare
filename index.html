@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#subscribemodal').modal('show');
+			});
+	</script>
+	<title>Cryptocare</title>
+</head>
+<body>
+	<!-- <div class="modal fade" id="subscribemodal" tabindex="-1" aria-labelledby="modaltitle" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="modaltitle"> Subscribe for early access</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Subscribe to our mailing list to get the latest updates straight in your inbox. <br><br><br>
+					<label>Email<input type="email" name="subemail" id="emailfield" placeholder="Enter Email"></label>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-target="#subscribemodal" data-toggle="modal" class="mybtn" id="subbutton">Subscribe</button>
+				</div>
+			</div>
+		</div>		
+	</div> -->
+	<div id="container">
+
+		<div id="header">
+			<form>
+				<div class="row">
+					<div class="col-sm-6 col-md-4 col-lg-1"></div>					
+					<div class="col-sm-6 col-md-4 col-lg-2">
+						<img src="images/Cryptocare-Logo.png" id="logo" class="img-fluid">		
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-2"></div>
+					<div class="col-sm-6 col-md-4 col-lg-1"></div>
+					<div class="col-sm-6 col-md-4 col-lg-2">
+						<label hidden for="username">Username</label>
+						<input type="text" name="username" placeholder="Enter Username/Mobile" class="login">						
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-2">
+						<label hidden for="password">Password</label>
+						<input type="password" name="password" placeholder="Enter Password" class="login">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#">Forgot Password?</a>
+					</div>						
+					<div class="col-sm-6 col-md-4 col-lg-2">
+						<label hidden for="login">Log in</label>
+						<input type="submit" value="Log in" name="login" class="mybtn" id="loginbutton">			
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div id="body">
+			<table id="bodytable" width="100%">
+				<tr>
+					<td rowspan="2">
+						<table id="infotab">
+							<tr>
+								<td>
+									<img src="images/search.png" class="img-fluid">
+								</td>
+								<td>
+									Look up your friend's cryto receiving addresses
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/share.png" class="img-fluid">
+								</td>
+								<td>
+									Share your crypto receving addresses with your friends
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/wallet.png" class="img-fluid">
+								</td>
+								<td>
+									Manage your cryptocurrencies
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td id="tagline">
+						See which cryptocurrencies your friends are interested in!
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<form>
+							<table id="signuptab">
+								<tr>
+									<td>
+										<label hidden for="ename">Enter Name</label>
+										<input type="text" name="ename" class="signup" placeholder="Enter Name">
+									</td>
+									<td>
+										<label hidden for="eemail">Enter Email</label>
+										<input type="text" name="eemail" class="signup" placeholder="Enter Email">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label hidden for="emobile">Enter Mobile</label>
+										<input type="text" name="emobile" class="signup" placeholder="Enter Mobile">				
+									</td>
+									<td>
+										<label hidden for="epassword">Enter Password</label>
+										<input type="password" name="epassword" class="signup" placeholder="Enter Password">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label hidden for="repassword">Confirm Password</label>
+										<input type="password" name="repassword" class="signup" placeholder="Confirm Password">					
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label hidden for="eaccount">Create Account</label>
+										<input type="submit" name="eaccount" value="Create Account" class="mybtn" id="signupbutton">	
+									</td>
+								</tr>					
+							</table>
+						</form>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="footer">
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-1"><a href="#" class="foot">About Us</a></div>
+				<div class="col-lg-1"><a href="#" class="foot">News</a></div>
+				<div class="col-lg-1"><a href="#" class="foot">Contact Us</a></div>
+				<div class="col-lg-1"><a href="#" class="foot">FAQ</a></div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-1"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
